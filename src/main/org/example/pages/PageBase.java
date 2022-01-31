@@ -1,7 +1,7 @@
 package example.pages;
 
-import org.example.pages.factory.CustomFactory;
-import org.example.pages.factory.PageName;
+import example.pages.factory.CustomFactory;
+import example.pages.factory.PageName;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -27,7 +27,7 @@ public class PageBase {
 
     public PageBase logoutFromApplication(){
         logout.click();
-        org.example.pages.HomePageClass homePageClass= new org.example.pages.HomePageClass(driver);
+        HomePageClass homePageClass= new HomePageClass(driver);
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(homePageClass.fileABuglink));
         return homePageClass;
     }

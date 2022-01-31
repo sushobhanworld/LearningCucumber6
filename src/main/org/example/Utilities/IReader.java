@@ -1,4 +1,4 @@
-package org.example.Utilities;
+package example.Utilities;
 
 public interface IReader {
     public String getApplicationURL();

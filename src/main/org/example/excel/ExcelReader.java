@@ -1,4 +1,4 @@
-package org.example.excel;
+package example.excel;
 
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;

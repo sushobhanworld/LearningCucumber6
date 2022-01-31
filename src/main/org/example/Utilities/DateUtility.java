@@ -1,4 +1,4 @@
-package org.example.Utilities;
+package example.Utilities;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -17,8 +17,7 @@ public class DateUtility
         Date date1= calendar.getTime();
         String startDate= date1.toString();
         String[] s=startDate.split(" ");
-        String requiredStartDate= s[1]+" "+s[2]+" "+s[5];
-        return requiredStartDate;
+        return s[1]+" "+s[2]+" "+s[5];
     }
 
     public static String GetReturnDate(int day)
@@ -30,8 +29,7 @@ public class DateUtility
         Date date1= calendar.getTime();
         String returnDate= date1.toString();
         String[] s=returnDate.split(" ");
-        String requiredReturnDate= s[1]+" "+s[2]+","+" "+s[5];
-        return requiredReturnDate;
+        return s[1]+" "+s[2]+","+" "+s[5];
     }
 
     private static long DateDifferenceInDays(String futureDate) throws ParseException {

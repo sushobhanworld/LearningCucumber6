@@ -4,10 +4,11 @@ package example.pages.factory;
 import example.pages.HomePageClass;
 import example.pages.LoginPageClass;
 import example.pages.PageBase;
-import org.example.pages.EnterBugClass;
-import org.example.pages.menu.NewRunPageClass;
-import org.example.pages.menu.ProductDashboardPageClass;
-import org.example.pages.menu.SearchPageClass;
+import example.pages.menu.NewCasePageClass;
+import example.pages.EnterBugClass;
+import example.pages.menu.NewRunPageClass;
+import example.pages.menu.ProductDashboardPageClass;
+import example.pages.menu.SearchPageClass;
 import org.openqa.selenium.WebDriver;
 
 public class CustomFactory {
@@ -22,7 +23,7 @@ public class CustomFactory {
             case LoginPage:
                 return new LoginPageClass(driver);
             case NewCasePage:
-                return new org.example.pages.menu.NewCasePageClass(driver);
+                return new NewCasePageClass(driver);
             case NewRunPage:
                 return new NewRunPageClass(driver);
             case ProductDashboardPage:
