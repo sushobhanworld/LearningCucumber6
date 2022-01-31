@@ -1,8 +1,7 @@
-package org.example.pages;
+package example.pages;
 
-import org.example.Utilities.JavaScriptUtilities;
-import org.example.Utilities.TestUtility;
-import org.example.init.BaseClass;
+import example.Utilities.TestUtility;
+import example.init.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
@@ -27,7 +26,7 @@ public class LandingPage extends BaseClass
         {
             e.printStackTrace();
         }
-        JavaScriptUtilities.HighLightElementByJavaScript(signUp, driver);
+        org.example.Utilities.JavaScriptUtilities.HighLightElementByJavaScript(signUp, driver);
         TestUtility.ClickOn(driver, signUp, 20);
         return new Register();
     }

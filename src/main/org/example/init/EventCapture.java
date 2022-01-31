@@ -1,4 +1,4 @@
-package org.example.init;
+package example.init;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.events.WebDriverEventListener;

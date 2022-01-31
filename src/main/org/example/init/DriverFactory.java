@@ -1,4 +1,4 @@
-package org.example.init;
+package example.init;
 
 import org.openqa.selenium.WebDriver;
 
@@ -9,7 +9,7 @@ public class DriverFactory {
         System.out.println("Inside private constructor of driver factory class");
     }
 
-    private static DriverFactory driverFactory= new DriverFactory();
+    private static final DriverFactory driverFactory= new DriverFactory();
     public static DriverFactory getInstance()
     {
         return driverFactory;
@@ -25,6 +25,4 @@ public class DriverFactory {
     {
         return driverThreadLocal.get();
     }
-
-
 }

@@ -1,4 +1,4 @@
-package org.example.pages.menu;
+package example.pages.menu;
 
 import org.example.pages.PageBase;
 import org.openqa.selenium.WebDriver;

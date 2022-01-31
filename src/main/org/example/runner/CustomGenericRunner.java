@@ -1,7 +1,7 @@
-package org.example.runner;
+package example.runner;
 
 import io.cucumber.testng.CucumberOptions;
-import org.example.customRunner.CustomAbstractTestNGCucumberRunner;
+import example.customRunner.CustomAbstractTestNGCucumberRunner;
 
 @CucumberOptions(
         features = {"src/main/org/example/pages"},

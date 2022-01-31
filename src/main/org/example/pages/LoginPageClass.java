@@ -1,4 +1,4 @@
-package org.example.pages;
+package example.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,8 +7,8 @@ import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class LoginPageClass extends PageBase{
-    private WebDriver webDriver;
+public class LoginPageClass extends example.pages.PageBase {
+    private final WebDriver webDriver;
 
     public LoginPageClass(WebDriver driver) {
         super(driver);
@@ -22,8 +22,8 @@ public class LoginPageClass extends PageBase{
     @FindBy(how = How.ID,using = "log_in")
     public WebElement loginButton;
 
-    public PageBase login(String user,String pass){
-        EnterBugClass enterBugClass= new EnterBugClass(webDriver);
+    public example.pages.PageBase login(String user, String pass){
+        org.example.pages.EnterBugClass enterBugClass= new org.example.pages.EnterBugClass(webDriver);
         username.sendKeys(user);
         password.sendKeys(pass);
         loginButton.click();

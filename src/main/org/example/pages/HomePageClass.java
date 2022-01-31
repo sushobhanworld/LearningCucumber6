@@ -1,4 +1,4 @@
-package org.example.pages;
+package example.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -8,7 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePageClass extends PageBase {
-    private WebDriver webDriver;
+    private final WebDriver webDriver;
 
     public HomePageClass(WebDriver driver){
         super(driver);

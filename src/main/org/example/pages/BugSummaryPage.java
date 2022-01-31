@@ -1,4 +1,4 @@
-package org.example.pages;
+package example.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
 public class BugSummaryPage extends PageBase{
-    private WebDriver webDriver;
+    private final WebDriver webDriver;
     public BugSummaryPage(WebDriver driver) {
         super(driver);
         this.webDriver=driver;

@@ -1,11 +1,11 @@
-package org.example.browser;
+package example.browser;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-public class CustomChromeDriver implements BrowserConfiguration{
+public class CustomChromeDriver implements BrowserConfiguration {
 
     private ChromeOptions getChromeOptions(){
         ChromeOptions chromeOptions= new ChromeOptions();
@@ -16,8 +16,7 @@ public class CustomChromeDriver implements BrowserConfiguration{
     public WebDriver getChromeDriver(){
         WebDriverManager.chromedriver().setup();
         ChromeOptions chromeOptions= getChromeOptions();
-        ChromeDriver chromeDriver= new ChromeDriver(chromeOptions);
-        return chromeDriver;
+        return new ChromeDriver(chromeOptions);
     }
 
     @Override

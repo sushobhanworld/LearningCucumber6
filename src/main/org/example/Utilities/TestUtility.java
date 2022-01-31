@@ -1,7 +1,7 @@
-package org.example.Utilities;
+package example.Utilities;
 
 import org.apache.commons.io.FileUtils;
-import org.example.init.BaseClass;
+import example.init.BaseClass;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;

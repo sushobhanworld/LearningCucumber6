@@ -1,10 +1,10 @@
-package org.example.Utilities;
+package example.Utilities;
 
 import java.io.FileInputStream;
 import java.io.InputStream;
 import java.util.Properties;
 
-public class ReadConfigProperties implements IReader{
+public class ReadConfigProperties implements org.example.Utilities.IReader {
     private Properties properties;
 
     private void initPropertiesFile(String fileName){

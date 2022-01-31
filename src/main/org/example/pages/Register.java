@@ -1,6 +1,6 @@
-package org.example.pages;
+package example.pages;
 
-import org.example.init.BaseClass;
+import example.init.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;

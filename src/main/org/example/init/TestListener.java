@@ -1,8 +1,8 @@
-package org.example.init;
+package example.init;
 
 import com.aventstack.extentreports.Status;
-import org.example.Utilities.TestUtility;
-import org.example.reports.ExtentReportsSetUp;
+import example.Utilities.TestUtility;
+import example.reports.ExtentReportsSetUp;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;

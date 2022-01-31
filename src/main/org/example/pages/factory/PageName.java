@@ -1,4 +1,4 @@
-package org.example.pages.factory;
+package example.pages.factory;
 
 public enum PageName {
     HomePage,

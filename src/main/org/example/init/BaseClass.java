@@ -1,4 +1,4 @@
-package org.example.init;
+package example.init;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.Logger;

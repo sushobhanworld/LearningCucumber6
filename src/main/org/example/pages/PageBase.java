@@ -1,4 +1,4 @@
-package org.example.pages;
+package example.pages;
 
 import org.example.pages.factory.CustomFactory;
 import org.example.pages.factory.PageName;
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class PageBase {
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public PageBase(WebDriver driver){
         this.driver=driver;
@@ -27,7 +27,7 @@ public class PageBase {
 
     public PageBase logoutFromApplication(){
         logout.click();
-        HomePageClass homePageClass= new HomePageClass(driver);
+        org.example.pages.HomePageClass homePageClass= new org.example.pages.HomePageClass(driver);
         new WebDriverWait(driver, 20).until(ExpectedConditions.elementToBeClickable(homePageClass.fileABuglink));
         return homePageClass;
     }

@@ -1,11 +1,10 @@
-package org.example.services;
+package example.services;
 
+import example.browser.BrowserConfiguration;
+import example.browser.CustomChromeDriver;
+import example.browser.CustomFireFoxDriver;
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.example.Utilities.IReader;
 import org.example.Utilities.ReadConfigProperties;
-import org.example.browser.BrowserConfiguration;
-import org.example.browser.CustomChromeDriver;
-import org.example.browser.CustomFireFoxDriver;
 import org.example.helper.ButtonHelper;
 import org.example.helper.DropdownHelper;
 import org.example.helper.GenericHelper;
@@ -18,7 +17,7 @@ public class DriverService {
     private BrowserConfiguration browserConfiguration;
     private ButtonHelper buttonHelper;
     private WindowHelper windowHelper;
-    private IReader iReader;
+    private ReadConfigProperties iReader;
     private GenericHelper genericHelper;
     private DropdownHelper dropdownHelper;
 
@@ -30,7 +29,7 @@ public class DriverService {
         return browserConfiguration;
     }
 
-    public IReader getiReader() {
+    public ReadConfigProperties getiReader() {
         return iReader;
     }
 

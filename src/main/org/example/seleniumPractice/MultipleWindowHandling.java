@@ -1,4 +1,4 @@
-package org.example.seleniumPractice;
+package example.seleniumPractice;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.example.helper.ButtonHelper;

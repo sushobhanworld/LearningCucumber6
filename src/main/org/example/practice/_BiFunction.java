@@ -1,4 +1,4 @@
-package org.example.practice;
+package example.practice;
 
 import java.util.function.BiFunction;
 

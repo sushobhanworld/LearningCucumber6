@@ -1,15 +1,15 @@
-package org.example.gerichook;
+package example.gerichook;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import org.example.services.DriverService;
+import example.services.DriverService;
 import org.openqa.selenium.WebDriver;
 
 public class GeneralHook {
     //Inject driver service here in constructor
-    private WebDriver webDriver;
-    private DriverService driverService;
+    private final WebDriver webDriver;
+    private final DriverService driverService;
 
     public GeneralHook(DriverService driverService){
         this.driverService=driverService;

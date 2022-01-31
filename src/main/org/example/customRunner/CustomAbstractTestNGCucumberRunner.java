@@ -1,4 +1,4 @@
-package org.example.customRunner;
+package example.customRunner;
 
 import io.cucumber.testng.FeatureWrapper;
 import io.cucumber.testng.PickleWrapper;
